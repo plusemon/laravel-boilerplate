@@ -8,9 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- App favicon -->
     <link rel="shortcut icon" href="{{ asset('assets/dashboard/images/favicon.ico') }}">
-
     @include('layouts.dashboard.styles')
-
 </head>
 
 <body class="bg-pattern">
