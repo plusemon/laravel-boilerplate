@@ -9,7 +9,9 @@
 
 <script src="{{ asset('assets/dashboard/js/app.js') }}"></script>
 
-{{-- for custom scripts / page js --}}
-@push('js')
+<script src="https://cdn.bootcss.com/toastr.js/latest/js/toastr.min.js"></script>
+<!-- Toastr Scripts render -->
+{!! Notify::message() !!}
 
-@endpush
+{{-- for custom scripts / page js --}}
+@method('js')

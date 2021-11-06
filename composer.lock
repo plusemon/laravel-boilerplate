@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ab2417df9ed9aebff8e5aea69a80a584",
+    "content-hash": "6de281751c06509d420926e7aff8d9fa",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -957,6 +957,67 @@
                 }
             ],
             "time": "2021-10-06T17:43:30+00:00"
+        },
+        {
+            "name": "idemonbd/notify",
+            "version": "v1.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/idemonbd/notify.git",
+                "reference": "0e58204199cff7e2ff678c09cd2dee160134d066"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/idemonbd/notify/zipball/0e58204199cff7e2ff678c09cd2dee160134d066",
+                "reference": "0e58204199cff7e2ff678c09cd2dee160134d066",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/session": ">=5.2.7",
+                "illuminate/support": ">=5.2.7",
+                "php": ">=5.5.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Idemonbd\\Notify\\NotifyServiceProvider"
+                    ],
+                    "aliases": {
+                        "Notify": "Idemonbd\\Notify\\Facades\\Notify"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Idemonbd\\Notify\\": "src/"
+                },
+                "files": [
+                    "src/helper.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Emon Khan",
+                    "email": "bdemon00@gmail.com"
+                }
+            ],
+            "description": "Toastr Notifcation for Laravel",
+            "homepage": "https://github.com/idemonbd/notify",
+            "keywords": [
+                "laravel",
+                "notification",
+                "toastr"
+            ],
+            "support": {
+                "issues": "https://github.com/idemonbd/notify/issues",
+                "source": "https://github.com/idemonbd/notify/tree/v1.0.4"
+            },
+            "time": "2021-06-10T14:56:21+00:00"
         },
         {
             "name": "laravel/framework",
