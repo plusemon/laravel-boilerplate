@@ -15,19 +15,36 @@
 
                             <h4 class="font-size-18 text-muted text-center mt-2">Register Now</h4>
                             <p class="text-muted text-center mb-4">Get your free account now.</p>
+                            <ul>
+                                @if ($errors->any())
+                                    @foreach ($errors->all() as $error)
+                                        <li class="text-danger">{{ $error }}</li>
+                                    @endforeach
+                                @endif
+                            </ul>
                             <form class="form-horizontal" action="{{ route('register') }}" method="POST">
                                 @csrf
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <div class="mb-4">
+                                        <div class="mb-2">
+                                            <label class="form-label" for="name">Name</label>
+                                            <input type="text" name="name" class="form-control" id="name"
+                                                   placeholder="Enter you full name">
+                                        </div>
+                                        <div class="mb-2">
                                             <label class="form-label" for="useremail">Email</label>
                                             <input type="email" name="email" class="form-control" id="useremail"
                                                    placeholder="Enter email">
                                         </div>
-                                        <div class="mb-4">
+                                        <div class="mb-2">
                                             <label class="form-label" for="userpassword">Password</label>
                                             <input type="password" name="password" class="form-control" id="userpassword"
                                                    placeholder="Enter password">
+                                        </div>
+                                        <div class="mb-2">
+                                            <label class="form-label" for="password_confirmation">Confirm Password</label>
+                                            <input type="password" name="password_confirmation" class="form-control" id="password_confirmation"
+                                                   placeholder="Enter password again">
                                         </div>
                                         <div class="form-check">
                                             <input type="checkbox" class="form-check-input" id="term-conditionCheck">

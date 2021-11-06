@@ -1,4 +1,4 @@
-@extends('layouts.auth.layout', ['title' => 'Login'])
+@extends('layouts.auth.app', ['title' => 'Login'])
 
 @section('main')
     <div class="account-pages my-5 pt-5">
